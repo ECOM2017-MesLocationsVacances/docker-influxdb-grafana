@@ -28,7 +28,7 @@ grafana:
   env_file:
     - 'env.grafana'
    
-  volules:
+  volumes:
     - ./grafana.ini:/etc/grafana/grafana.ini:ro
   links:
     - influxdb
