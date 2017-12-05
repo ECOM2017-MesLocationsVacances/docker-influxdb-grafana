@@ -27,5 +27,8 @@ grafana:
     - "3000:3000"
   env_file:
     - 'env.grafana'
+   
+  volules:
+    - ./grafana.ini:/etc/grafana/grafana.ini:ro
   links:
     - influxdb
